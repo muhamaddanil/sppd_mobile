@@ -53,6 +53,7 @@ class _TelaahDitolakState extends State<TelaahDitolak> {
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.all(8.0),
           child: ListView(
+            physics: BouncingScrollPhysics(),
             children: <Widget>[
               telaahCard('Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019', 'HAYATI,SH.M'),
               telaahCard('Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019', 'HAYATI,SH.M'),

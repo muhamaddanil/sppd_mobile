@@ -84,8 +84,9 @@ class _BerandaState extends State<Beranda> {
               ),
               Divider(),
               Container(
-                height: MediaQuery.of(context).size.height - 350,
+                height: MediaQuery.of(context).size.height - 500,
                 child: ListView(
+                  physics: BouncingScrollPhysics(),
                   children: <Widget>[
                     historyList('loremiadpajdpajwdpajwdajwdpajwdpajdpajdpwjdapwjdapjwdpajwdapjwdp', FontAwesomeIcons.check),
                     historyList('loremiadpajdpajwdpajwdajwdpajwdpajdpajdpwjdapwjdapjwdpajwdapjwdp', FontAwesomeIcons.check),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:sppd_mobile/theme/theme.dart';
 import 'package:sppd_mobile/view/view_login.dart';
 
 class Profile extends StatefulWidget {
@@ -120,7 +119,7 @@ class _ProfileState extends State<Profile> {
                 height: 25,
               ),
               Container(
-                height: MediaQuery.of(context).size.height,
+//                height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width - 50,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
