@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sppd_mobile/components/anggaranCard.dart';
 import 'package:sppd_mobile/components/telaahCard.dart';
 
 class Anggaran extends StatefulWidget {
@@ -103,6 +104,7 @@ class _AnggaranState extends State<Anggaran> {
         ),
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: <Widget>[
             Container(
@@ -115,15 +117,31 @@ class _AnggaranState extends State<Anggaran> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height - 250,
-              width: MediaQuery.of(context).size.width,
               padding: EdgeInsets.all(8.0),
-              child: ListView(
-                physics: BouncingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  telaahCard('Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019', 'HAYATI,SH.M'),
-                  telaahCard('Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019', 'HAYATI,SH.M'),
-                  telaahCard('Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019', 'HAYATI,SH.M'),
+                  Text(
+                    'Diagram Anggaran Keseluruhan',
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                  anggaranCard('Rp.200,000', 'Rp.100,000', 'Rp.100,000'),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  Text(
+                    'Diagram Anggaran Luar Daerah',
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                  anggaranCard('Rp.200,000', 'Rp.100,000', 'Rp.100,000'),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  Text(
+                    'Diagram Anggaran Dalam Daerah',
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                  anggaranCard('Rp.200,000', 'Rp.100,000', 'Rp.100,000'),
                 ],
               ),
             ),
