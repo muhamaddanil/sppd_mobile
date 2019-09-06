@@ -43,7 +43,9 @@ class _ProfileState extends State<Profile> {
                               'Tidak',
                               style: TextStyle(color: Colors.white),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
                           ),
                           MaterialButton(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.3)),
@@ -82,6 +84,7 @@ class _ProfileState extends State<Profile> {
           ),
         ),
         body: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: <Widget>[
               Container(

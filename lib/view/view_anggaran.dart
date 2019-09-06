@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sppd_mobile/components/anggaranCard.dart';
-import 'package:sppd_mobile/components/telaahCard.dart';
 
 class Anggaran extends StatefulWidget {
   @override
@@ -14,6 +13,7 @@ class _AnggaranState extends State<Anggaran> {
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(
@@ -125,7 +125,7 @@ class _AnggaranState extends State<Anggaran> {
                     'Diagram Anggaran Keseluruhan',
                     style: TextStyle(fontSize: 18.0),
                   ),
-                  anggaranCard('Rp.200,000', 'Rp.100,000', 'Rp.100,000'),
+                  anggaranCard('Rp.553,362,000', 'Rp.434,265,796', 'Rp.119,096,206'),
                   SizedBox(
                     height: 20.0,
                   ),
@@ -133,7 +133,7 @@ class _AnggaranState extends State<Anggaran> {
                     'Diagram Anggaran Luar Daerah',
                     style: TextStyle(fontSize: 18.0),
                   ),
-                  anggaranCard('Rp.200,000', 'Rp.100,000', 'Rp.100,000'),
+                  anggaranCard('Rp.330,522,000', 'Rp.246,659,094', 'Rp.83,862,906'),
                   SizedBox(
                     height: 20.0,
                   ),
@@ -141,7 +141,7 @@ class _AnggaranState extends State<Anggaran> {
                     'Diagram Anggaran Dalam Daerah',
                     style: TextStyle(fontSize: 18.0),
                   ),
-                  anggaranCard('Rp.200,000', 'Rp.100,000', 'Rp.100,000'),
+                  anggaranCard('Rp.200,000,000', 'Rp.100,000,000', 'Rp.100,000,000'),
                 ],
               ),
             ),

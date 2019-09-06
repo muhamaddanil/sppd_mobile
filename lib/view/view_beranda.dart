@@ -47,6 +47,7 @@ class _BerandaState extends State<Beranda> {
           height: 200,
           width: 2000,
           child: ListView(
+            physics: BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             children: <Widget>[
               telaahOverviewCard(

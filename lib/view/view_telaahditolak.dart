@@ -30,7 +30,35 @@ class _TelaahDitolakState extends State<TelaahDitolak> {
                   FontAwesomeIcons.sort,
                   color: Colors.black.withOpacity(0.2),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  showDialog(
+                      context: context, builder: (BuildContext context) {
+                    return AlertDialog(
+                      elevation: 0.0,
+                      backgroundColor: Colors.white.withOpacity(0.0),
+                      title: Column(
+                        children: <Widget>[
+                          RawMaterialButton(
+                            child: Text('Terbaru', style: TextStyle(fontSize: 32.0, color: Colors.white),),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                          SizedBox(
+                            child: Divider( color: Colors.white,),
+                          ),
+                          RawMaterialButton(
+                            child: Text('Terlama', style: TextStyle(fontSize: 32.0, color: Colors.white),),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                        ],
+                      ),
+
+                    );
+                  });
+                },
               )
             ],
           ),
