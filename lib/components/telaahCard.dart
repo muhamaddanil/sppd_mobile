@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sppd_mobile/view/view_detailtelaah.dart';
 
-Card telaahCard(String namaTelaah, String pengirimTelaah) {
+Card telaahCard(BuildContext context, String namaTelaah, String pengirimTelaah) {
   return Card(
     child: Container(
       padding: EdgeInsets.all(8.0),
@@ -48,7 +49,11 @@ Card telaahCard(String namaTelaah, String pengirimTelaah) {
                       textAlign: TextAlign.center,
                     ),
                     onPressed: () {
-
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DetailTelaah()),
+                      );
                     },
                   ),
                 ],

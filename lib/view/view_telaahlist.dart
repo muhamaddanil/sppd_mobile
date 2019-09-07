@@ -83,27 +83,35 @@ class _TelaahListState extends State<TelaahList> {
             physics: BouncingScrollPhysics(),
             children: <Widget>[
               telaahCard(
+                context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
               telaahCard(
+                  context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
                   'HAYATI,SH.M'),
             ],
