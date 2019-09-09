@@ -15,6 +15,8 @@ class _BerandaState extends State<Beranda> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
+
+        //------------------------- PAGE TITLE -------------------------//
         Container(
           margin: EdgeInsets.all(15.0),
           child: Text(
@@ -23,6 +25,9 @@ class _BerandaState extends State<Beranda> {
             textAlign: TextAlign.left,
           ),
         ),
+        //------------------------- END PAGE TITLE -------------------------//
+
+        //------------------------- WELCOME TITLE -------------------------//
         Container(
             margin: EdgeInsets.symmetric(horizontal: 15.0),
             child: Column(
@@ -40,9 +45,13 @@ class _BerandaState extends State<Beranda> {
                 ),
               ],
             )),
+        //------------------------- END WELCOME TITLE -------------------------//
+
         SizedBox(
           height: 15.0,
         ),
+
+        //------------------------- TELAAH OVERVIEW -------------------------//
         Container(
           height: 200,
           width: 2000,
@@ -71,9 +80,13 @@ class _BerandaState extends State<Beranda> {
             ],
           ),
         ),
+        //------------------------- END TELAAH OVERVIEW -------------------------//
+
         SizedBox(
           height: 15.0,
         ),
+
+        //------------------------- HISTORY LIST -------------------------//
         Container(
           padding: EdgeInsets.all(8.0),
           child: Column(
@@ -98,6 +111,8 @@ class _BerandaState extends State<Beranda> {
             ],
           ),
         ),
+        //------------------------- END HISTORY LIST -------------------------//
+
       ],
     );
   }

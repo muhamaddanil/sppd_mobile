@@ -20,11 +20,16 @@ class _TelaahListState extends State<TelaahList> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
+
+              //------------------------- PAGE TITLE -------------------------//
               Text(
                 'Telaah Staff',
                 style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.w300),
                 textAlign: TextAlign.left,
               ),
+              //------------------------- END PAGE TITLE -------------------------//
+
+              //------------------------- SORT BUTTON -------------------------//
               IconButton(
                 icon: Icon(
                   FontAwesomeIcons.sort,
@@ -60,9 +65,12 @@ class _TelaahListState extends State<TelaahList> {
                   });
                 },
               ),
+              //------------------------- END SORT BUTTON -------------------------//
             ],
           ),
         ),
+
+        //------------------------- SEARCH TEXTFIELD -------------------------//
         Container(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: TextFormField(
@@ -75,6 +83,9 @@ class _TelaahListState extends State<TelaahList> {
             ),
           ),
         ),
+        //------------------------- END SEARCH TEXTFIELD -------------------------//
+
+        //------------------------- TELAAH LISTVIEW -------------------------//
         Container(
           height: MediaQuery.of(context).size.height - 250,
           width: MediaQuery.of(context).size.width,
@@ -85,38 +96,40 @@ class _TelaahListState extends State<TelaahList> {
               telaahCard(
                 context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
               telaahCard(
                   context,
                   'Menghadiri Undangan Kegiatan Asistensi Sistem Pemerintahan berbasis Elektronik Tahun 2019',
-                  'HAYATI,SH.M'),
+                  'HAYATI,SH.M', '22-08-2019 14:14:37'),
             ],
           ),
         ),
+        //------------------------- END TELAAH LISTVIEW -------------------------//
+
       ],
     );
   }

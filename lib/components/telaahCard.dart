@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sppd_mobile/view/view_detailtelaah.dart';
 
-Card telaahCard(BuildContext context, String namaTelaah, String pengirimTelaah) {
+Card telaahCard(BuildContext context, String namaTelaah, String pengirimTelaah, String tanggalTelaah) {
   return Card(
     child: Container(
       padding: EdgeInsets.all(8.0),
@@ -37,7 +37,9 @@ Card telaahCard(BuildContext context, String namaTelaah, String pengirimTelaah) 
                 ],
               ),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
+                  Text(tanggalTelaah),
                   MaterialButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.3),
